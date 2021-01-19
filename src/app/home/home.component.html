@@ -1,0 +1,11 @@
+<h3>You are at Home Page</h3>
+<br>
+<button class="btn btn-primary">Activate</button>
+<div *ngIf= "subscriptionTime > 0 && !infoMessage">
+    <hr>
+    <h5>Subscription Activated <strong>{{ subscriptionTime }}</strong> seconds ago</h5>
+</div>
+<div *ngIf="infoMessage">
+    <hr>
+    <h5><strong>{{ infoMessage }}</strong></h5>
+</div>
